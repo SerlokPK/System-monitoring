@@ -1,0 +1,14 @@
+Object_0	Value: 6552	Time: 1/14/2018 7:22:59 PM
+Object_2	Value: 15448	Time: 1/14/2018 7:23:04 PM
+Object_1	Value: 5487	Time: 1/14/2018 7:23:09 PM
+Object_1	Value: 11777	Time: 1/14/2018 7:23:12 PM
+Object_1	Value: 5873	Time: 1/14/2018 7:23:18 PM
+Object_1	Value: 7080	Time: 1/14/2018 7:23:20 PM
+Object_3	Value: 6188	Time: 1/14/2018 7:23:26 PM
+Object_3	Value: 15121	Time: 1/14/2018 7:23:32 PM
+Object_2	Value: 10040	Time: 1/14/2018 7:23:34 PM
+Object_1	Value: 12745	Time: 1/14/2018 7:23:38 PM
+Object_0	Value: 13638	Time: 1/14/2018 7:23:43 PM
+Object_0	Value: 11853	Time: 1/14/2018 7:23:48 PM
+Object_0	Value: 6935	Time: 1/14/2018 7:23:51 PM
+Object_1	Value: 5325	Time: 1/14/2018 7:23:56 PM

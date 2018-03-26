@@ -1,0 +1,126 @@
+﻿<Window x:Class="PZ3_Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PZ3_Client"
+        mc:Ignorable="d"
+        Title="Application" Height="500" Width="700" KeyDown="Window_KeyDown">
+    <Grid HorizontalAlignment="Left" Width="517">
+        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="449" Margin="10,10,-171,0" VerticalAlignment="Top" Width="678" >
+            <TabItem Header="Network view" Margin="-2,-2,-55,0" >
+                <Grid Background="#FF0FD1D1" >
+
+                    <ListBox x:Name="listBox" ItemsSource="{Binding ListBoxList}" HorizontalAlignment="Left" Height="365" Margin="498,10,0,0" VerticalAlignment="Top" Width="164" SelectionChanged="listBox_SelectionChanged" MouseLeftButtonUp="listBox_MouseLeftButtonUp">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding Id}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                    <TextBlock Text=" " VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Broj}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                    <Button x:Name="button" Content="POP" Click="button_Click" Margin="10,123,530,285" FontSize="7"/>
+                    <Canvas Name="canv1" AllowDrop="True" DragOver="dragOver" Drop="drop" Height="108" Margin="0,10,530,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="132" Background="#FFF0DBDB">
+
+                        <TextBox x:Name="textBox" Height="23" IsReadOnly="True" Canvas.Left="10" TextWrapping="Wrap" Text="~" Canvas.Top="75" Width="112"/>
+                    </Canvas>
+                    <Button x:Name="button1" Content="POP" Click="button1_Click" Margin="164,124,376,284" FontSize="7"/>
+                    <Canvas Name="canv2" AllowDrop="True" DragOver="dragOver" Drop="drop" HorizontalAlignment="Left" Height="108" Margin="164,10,0,0" VerticalAlignment="Top" Width="132" Background="#FFF0DBDB">
+
+                        <TextBox x:Name="textBox1" Height="23" IsReadOnly="True" Canvas.Left="10" TextWrapping="Wrap" Text="~" Canvas.Top="75" Width="112"/>
+                    </Canvas>
+                    <Button x:Name="button3" Content="POP" Click="button3_Click" Margin="322,124,218,284" FontSize="7"/>
+                    <Canvas Name="canv3" AllowDrop="True" DragOver="dragOver" Drop="drop" HorizontalAlignment="Left" Height="108" Margin="322,10,0,0" VerticalAlignment="Top" Width="132" Background="#FFF0DBDB">
+
+                        <TextBox x:Name="textBox2" Height="23" Canvas.Left="10" IsReadOnly="True" TextWrapping="Wrap" Text="~" Canvas.Top="75" Width="112"/>
+                    </Canvas>
+                    <Button x:Name="button2" Content="POP" Click="button2_Click" Margin="10,252,530,156" FontSize="7"/>
+                    <Canvas Name="canv4" AllowDrop="True" DragOver="dragOver" Drop="drop" HorizontalAlignment="Left" Height="108" Margin="10,139,0,0" VerticalAlignment="Top" Width="132" Background="#FFF0DBDB">
+
+                        <TextBox x:Name="textBox3" Height="23" Canvas.Left="10" IsReadOnly="True" TextWrapping="Wrap" Text="~" Canvas.Top="75" Width="112"/>
+                    </Canvas>
+                    <Button x:Name="button4" Content="POP" Click="button4_Click" Margin="164,252,376,156" FontSize="7"/>
+                    <Canvas Name="canv5" AllowDrop="True" DragOver="dragOver" Drop="drop" HorizontalAlignment="Left" Height="105" Margin="164,142,0,0" VerticalAlignment="Top" Width="132" Background="#FFF0DBDB">
+
+                        <TextBox x:Name="textBox4" Height="23" Canvas.Left="10" IsReadOnly="True" TextWrapping="Wrap" Text="~" Canvas.Top="75" Width="112"/>
+                    </Canvas>
+                    <Button x:Name="button5" Content="POP" Click="button5_Click" Margin="322,252,218,156" FontSize="7"/>
+                    <Canvas Name="canv6" AllowDrop="True" DragOver="dragOver" Drop="drop" HorizontalAlignment="Left" Height="105" Margin="322,142,0,0" VerticalAlignment="Top" Width="132" Background="#FFF0DBDB">
+
+                        <TextBox x:Name="textBox5" Height="23" Canvas.Left="10" IsReadOnly="True" TextWrapping="Wrap" Text="~" Canvas.Top="75" Width="112"/>
+                    </Canvas>
+                    <Button x:Name="button6" Content="POP" Click="button6_Click" Margin="10,380,530,28" FontSize="7"/>
+                    <Canvas Name="canv7" AllowDrop="True" DragOver="dragOver" Drop="drop" HorizontalAlignment="Left" Height="105" Margin="10,270,0,0" VerticalAlignment="Top" Width="132" Background="#FFF0DBDB">
+
+                        <TextBox x:Name="textBox6" Height="23" Canvas.Left="10" TextWrapping="Wrap" IsReadOnly="True" Text="~" Canvas.Top="75" Width="112"/>
+                    </Canvas>
+                    <Button x:Name="button7" Content="POP" Click="button7_Click" Margin="164,380,376,28" FontSize="7"/>
+                    <Canvas Name="canv8" AllowDrop="True" DragOver="dragOver" Drop="drop" HorizontalAlignment="Left" Height="105" Margin="164,270,0,0" VerticalAlignment="Top" Width="132" Background="#FFF0DBDB">
+
+                        <TextBox x:Name="textBox7" Height="23" Canvas.Left="10" TextWrapping="Wrap" IsReadOnly="True" Text="~" Canvas.Top="75" Width="112"/>
+                    </Canvas>
+                    <Button x:Name="button8" Content="POP" Click="button8_Click" Margin="322,380,218,28" FontSize="7"/>
+                    <Canvas Name="canv9" AllowDrop="True" DragOver="dragOver" Drop="drop" HorizontalAlignment="Left" Height="105" Margin="322,270,0,0" VerticalAlignment="Top" Width="132" Background="#FFF0DBDB">
+
+                        <TextBox x:Name="textBox8" Height="23" Canvas.Left="10" TextWrapping="Wrap" IsReadOnly="True" Text="~" Canvas.Top="75" Width="112"/>
+                    </Canvas>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Network Data" Margin="57,0,-116,-2">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="43*"/>
+                        <RowDefinition Height="378*"/>
+                    </Grid.RowDefinitions>
+                    <Button x:Name="buttonAdd" Content="ADD" HorizontalAlignment="Left" Margin="61,34,0,0" VerticalAlignment="Top" Width="171" Height="45" Click="buttonAdd_Click" FontSize="18" FontWeight="Bold" Grid.RowSpan="2"/>
+                    <Button x:Name="buttonDel" Content="DELETE" HorizontalAlignment="Left" Margin="415,34,0,0" VerticalAlignment="Top" Width="171" Height="45" Click="buttonDel_Click" FontSize="18" FontWeight="Bold" Grid.RowSpan="2"/>
+                    <RadioButton x:Name="radioButtonNaz" Content="ID" HorizontalAlignment="Left" Margin="222,312,0,0" VerticalAlignment="Top" Checked="radioButtonNaz_Checked" FontStyle="Italic" Grid.Row="1"/>
+                    <Button x:Name="buttonSear" Content="SEARCH" HorizontalAlignment="Left" Margin="22,312,0,0" VerticalAlignment="Top" Width="171" Height="45" Click="buttonSear_Click" FontSize="18" FontWeight="Bold" Grid.Row="1"/>
+                    <RadioButton x:Name="radioButtonTip" Content="TYPE" HorizontalAlignment="Left" Margin="222,342,0,0" VerticalAlignment="Top" Checked="radioButtonTip_Checked" FontStyle="Italic" Grid.Row="1"/>
+
+                    <DataGrid x:Name="dataGrid" ItemsSource="{Binding AdditionalList,Mode=TwoWay}"  HorizontalAlignment="Left" SelectionMode="Single" AutoGenerateColumns="False" Height="253" Margin="22,41,0,0" VerticalAlignment="Top" Width="640" Grid.Row="1">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="100"/>
+                            <DataGridTextColumn Header="NAME" Binding="{Binding Broj}"  Width="100"/>
+                            <DataGridTextColumn Header="TYPE" Binding="{Binding Tip}" Width="100"/>
+                            <DataGridTemplateColumn>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Image Name="Picture" Source="{Binding Image}" Width="100" Height="85"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <TextBox x:Name="textBoxSearch" HorizontalAlignment="Left" Height="23" Margin="297,324,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+                    <Button x:Name="buttonRewind" Content="REWIND" HorizontalAlignment="Left" Margin="491,312,0,0" Grid.Row="1" VerticalAlignment="Top" Width = "171" Height = "45"  FontSize = "18" FontWeight = "Bold" Click="buttonRewind_Click"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="ChartData" Margin="0,0,-189,-2" HorizontalAlignment="Right" Width="144">
+                <Grid Background="#FFE5E5E5">
+                    <Canvas Name="canvasChart" HorizontalAlignment="Left" Height="317" Margin="10,94,0,0" VerticalAlignment="Top" Width="652" Background="#FFCBE6E5"/>
+                    <Button x:Name="buttonChart" Content="SHOW" HorizontalAlignment="Left" Margin="174,10,0,0" VerticalAlignment="Top" Width="312" Height="66" FontSize="36" FontWeight="Bold" Click="buttonChart_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Report" Margin="192,0,-250,-2">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="buttonShow" Content="SHOW" HorizontalAlignment="Left" Margin="443,28,0,0" VerticalAlignment="Top" Width="219" Height="62" FontSize="18" FontWeight="Bold" Click="buttonShow_Click"/>
+                    <TextBox x:Name="textBoxFile" HorizontalAlignment="Left" Height="293" Margin="10,118,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="652" IsReadOnly="True">
+                        <TextBox.Resources>
+                            <Style TargetType="{x:Type Paragraph}">
+                                <Setter Property="Margin" Value="0"/>
+
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        
+    </Grid>
+</Window>
